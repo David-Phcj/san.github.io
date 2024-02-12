@@ -19,6 +19,11 @@ body {
         background-position: 0% 50%;
     }
 }
+@media (max-width: 350px) {
+    body {
+        margin-right: 20px; /* o el valor que desees */
+    }
+}
 
 header {
     background-color: #ffcccc;
