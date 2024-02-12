@@ -6,7 +6,7 @@
     <title>Feliz día</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
 </head>
 <body>
     <header>
@@ -56,11 +56,11 @@
             <img src="osos-casamiento.png" alt="Imagen de Casamiento">
         </div>
 
-        <form id="formulario-casamiento" loading="lazy">
+        <form id="formulario-casamiento" loading="lazy" >
             <label for="nombre-tu">Tu Nombre:</label>
             <input type="text" id="nombre-tu" required>
     
-            <label for="nombre-novia">Nombre de tu Pareja:</label>
+            <label for="nombre-novia">Nombre de tu Novia:</label>
             <input type="text" id="nombre-novia" required>
     
             <button type="button" onclick="aprobarCasamiento()">Aprobar Casamiento</button>
@@ -72,7 +72,7 @@
 
     </section>    
 
-    <section id="contador-aniversario" loading="lazy" class="fadeIn aos" data-aos="fade-up">
+    <section id="contador-aniversario" class="fadeIn aos" data-aos="fade-up">
         <h2 data-aos="fade-right">Contador para Nuestro Próximo Aniversario</h2>
         <div id="contador-dias" data-aos="fade-left">
             <p id="dias-restantes"></p>
@@ -83,7 +83,7 @@
         <p>© 2024 David</p>
     </footer>
 
-    <script src="animacion.js"></script>
-   
+    <script src="animacion.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 </body>
 </html>
