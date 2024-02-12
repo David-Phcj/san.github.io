@@ -48,6 +48,9 @@ header {
 
 #oso-corazon {
     transform: scale(0);
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 footer {
