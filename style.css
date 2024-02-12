@@ -169,7 +169,8 @@ footer {
 }
 
 #contador-aniversario {
-    margin-top: 50px;
+    max-width: 800px;
+    margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
