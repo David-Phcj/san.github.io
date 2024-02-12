@@ -2,7 +2,10 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:  #bf80ff;
+    background-color: #f8f8f8;
+    background: linear-gradient(45deg, #ffcccc, #bf80ff);
+    background-size: 400% 400%;
+    animation: cambioFondo 15s ease infinite;
     overflow-x: hidden;
 }
 
