@@ -36,6 +36,10 @@ function aprobarCasamiento() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.getElementById("oso-corazon").classList.add("escalar");
+    }, 500);
+
     AOS.init({
         duration: 800,  // Duración de las animaciones en milisegundos
         once: true,     // Solo activa las animaciones una vez
