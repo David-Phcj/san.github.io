@@ -41,10 +41,6 @@ header {
     margin-top: 20px;
 }
 
-#oso-corazon.escalar {
-    transform: scale(1);
-}
-
 #oso-corazon {
     max-width: 100%;
     height: auto;
@@ -125,6 +121,7 @@ footer {
 
 #formulario-casamiento {
     max-width: 400px;
+    width: 90%;
     margin-top: 20px;
 }
 
