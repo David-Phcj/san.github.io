@@ -41,8 +41,11 @@ header {
     margin-top: 20px;
 }
 
+#oso-corazon.escalar {
+    transform: scale(1);
+}
+
 #oso-corazon {
-    transform: scale(0);
     max-width: 100%;
     height: auto;
     border-radius: 10px;
