@@ -103,3 +103,42 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(actualizarContador, 86400000);  // 86400000 milisegundos = 24 horas
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var abrirPopupButton = document.getElementById('abrirPopup');
+    var cerrarPopupButton = document.getElementById('cerrarPopup');
+    var popup = document.getElementById('miPopup');
+    var overlay = document.getElementById('overlay');
+    var cartas = [
+        "Amor, contigo cada día es una nueva aventura, y cada desafío se convierte en una oportunidad para crecer juntos. A través de las risas y las lágrimas, nuestra conexión se fortalece, creando un lazo indestructible.",
+        "En el universo de nuestras vidas, tú eres la estrella que ilumina mi cielo oscuro. Cada momento contigo es como una dulce melodía que llena mi corazón de alegría. Tu amor es el regalo más precioso que he recibido, y cada día a tu lado es un recordatorio de lo afortunado que soy.",
+        "Tus abrazos son mi refugio, y tus besos son la magia que transforma lo ordinario en extraordinario. Eres mi confidente, mi cómplice y mi mejor amiga. En cada risa compartida, en cada mirada cómplice, encuentro la razón de mi felicidad.",
+        "Te amo más allá de las palabras, más allá del tiempo y del espacio. Eres mi sol en los días grises, mi consuelo en las tristezas y mi motivación para alcanzar las estrellas.",
+        "Gracias por ser el amor de mi vida, por llenar mis días de luz y por hacer de cada momento un recuerdo inolvidable. Eres mi sueño hecho realidad, y estoy agradecido por tenerte a mi lado en este hermoso viaje llamado vida."
+    ]
+    
+    var cartaElemento = document.getElementById('cartasy');
+    var indices = Math.floor(Math.random() * cartas.length);
+
+    abrirPopupButton.addEventListener('click', function () {
+      // Mostrar la ventana emergente y el fondo oscurecido
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+      cartaElemento.innerText = cartas[indices];
+    });
+
+    cerrarPopupButton.addEventListener('click', function () {
+      // Ocultar la ventana emergente y el fondo oscurecido
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+
+    overlay.addEventListener('click', function () {
+      // Ocultar la ventana emergente y el fondo oscurecido al hacer clic en el fondo
+      popup.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+});
+
+
+
+  
