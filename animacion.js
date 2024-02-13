@@ -11,12 +11,27 @@ function respuestas() {
 }
 function moverBoton() {
     var boton = document.getElementById('respuesta-no');
-  
+    var mensajes = [
+        "¡Tendras que decirme que si!",
+        "¡No es tan dificl decir que si!",
+        "¡El boton correcto esta justo debajo!",
+        "¿Prefieres alargar lo inevitable?",
+        "¡Talvez te equivocaste, te doy otra oportunidad!",
+        "¿Porque?",
+        "¡Estaremos aqui todo el dia!",
+        "¿Porque tomas esa decision?",
+        "¡Esto es importante elige bien!"]
+    
+    var mensajeElemento = document.getElementById('mensaje-negacion');
+    var indice = Math.floor(Math.random() * mensajes.length);
+
     // Cambia la posición del botón al ser presionado
     boton.style.marginTop = Math.random() * 200 + 'px';
     boton.style.marginRight = Math.random() * 200 + 'px';
     boton.style.marginBottom = Math.random() * 200 + 'px';
     boton.style.marginLeft = Math.random() * 200 + 'px';
+
+    mensajeElemento.innerText = mensajes[indice];
   }
   
 
