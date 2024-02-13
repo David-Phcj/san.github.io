@@ -5,20 +5,7 @@ body {
     background-color: #f8f8f8;
     background: linear-gradient(45deg, #ffcccc, #bf80ff);
     background-size: 400% 400%;
-    animation: cambioFondo 15s ease infinite;
     overflow-x: hidden;
-}
-
-@keyframes cambioFondo {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 header {
@@ -192,4 +179,42 @@ footer {
 #contador-dias p {
     font-size: 1.5em;
     color: #333;
+}
+
+#respuesta{
+    background-color: #ff3366;
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+}
+
+#respuesta-no{
+    background-color: #ff3366;
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 18px;
+    margin-bottom: 2px;
+    margin-left: 40px;
+    margin-right: 0px;
+    position: absolute;
+}
+
+#respuesta-opciones{
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

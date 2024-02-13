@@ -1,14 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Añade la clase para la animación de escalar el oso-corazon después de un breve retraso
-    setTimeout(function () {
-        document.getElementById("oso-corazon").style.transform = "scale(1)";
-    }, 500);
+function respuestas() {
+    var respuesta = document.getElementById("todo");
+    var menusan = document.getElementById("respuesta-opciones")
 
-    // Añade la clase para la animación de fadeIn después de que el contenido se haya cargado completamente
-    setTimeout(function () {
-        document.getElementById("contenido").classList.add("fadeIn");
-    }, 1000);
-});
+    if (respuesta.style.display === "none" || respuesta.style.display === ""){
+        respuesta.style.display = "block";
+        menusan.style.display = "none"
+    } else{
+        respuesta.style.display = "none";
+    }
+}
+function moverBoton() {
+    var boton = document.getElementById('respuesta-no');
+  
+    // Cambia la posición del botón al ser presionado
+    boton.style.marginTop = Math.random() * 200 + 'px';
+    boton.style.marginRight = Math.random() * 200 + 'px';
+    boton.style.marginBottom = Math.random() * 200 + 'px';
+    boton.style.marginLeft = Math.random() * 200 + 'px';
+  }
+  
 
 function toggleRazones() {
     var razonesContainer = document.getElementById("razones-amor");
@@ -77,3 +87,4 @@ document.addEventListener("DOMContentLoaded", function () {
     // Actualiza el contador cada día (cada 24 horas)
     setInterval(actualizarContador, 86400000);  // 86400000 milisegundos = 24 horas
 });
+

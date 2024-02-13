@@ -9,84 +9,91 @@
     
 </head>
 <body>
-    <header>
-        <h1>¡Feliz Día de San Valentín!</h1>
-    </header>
-
-    <section id="contenido" class="fadeIn">
-        <h2>Querida Yasmin,</h2>
-        <p>En este Día de San Valentín, quiero expresarte cuánto significas para mí...</p>
-        
-        <! Imagen del oso
+    <section id="respuesta-opciones" class="fadeIn">
+        <h2 style="text-align: center;">Mi amor</h2>
         <div  class="oso-corazon-container">
-            <img src="oso.png" alt="Oso abrazando un corazón azul" width="300" id="oso-corazon">
+            <img src="oso rosa.png" alt="Oso abrazando un corazón azul" width="300" id="oso-corazon">
         </div>
-
-        <p>Gracias por ser mi compañera, mi amiga y mi amor. Feliz Día de San Valentín, Mi amor. 
-            Te amo más de lo que las palabras pueden decir.</p>
-
-        <div id="razones-amor", style="display: none;">
-            <h3>Razones por las que te amo:</h3>
-            <ul>
-                <li>Eres mi mejor amiga y confidente.</li>
-                <li>Tu risa ilumina incluso los días más oscuros.</li>
-                <li>Siempre estás ahí para apoyarme en todo.</li>
-                <li>Tienes unos ojos hermosos.</li>
-                <li>La pasión y entusiasmo que pones en las actvidades en pareja.</li>
-                <li>Tu corazón generoso y disposición a dar sin esperar nada a cambio.</li>
-                <li>La belleza que va más allá de lo físico, irradiando desde su interior.</li>
-                <li>Tu apertura a la aventura y disposición a probar cosas nuevas.</li>
-                <li>El compromiso y esfuerzo que pones en nuestra relación.</li>
-                <li>Tu honestidad refrescante y la sinceridad con la que comparte sus pensamientos.</li>
-                <li>Tu gratitud por las pequeñas cosas y capacidad para encontrar alegría en ellas.</li>
-                <li>La chispa única que compartimos, creando una conexión especial.</li>
-                <li>Eres preciosa.</li>
-                <li>Como me haces sentir cuando estamos juntos.</li>
-            </ul>
-        </div>
-
-        <button id="mostrarRazones" onclick="toggleRazones()">Razones para amarte</button>
+        <p style="font-size: 22px; text-align: center;">¿Quieres ser mi san valentin?</p>
+        <button id="respuesta" onclick="respuestas()">Si</button>
+        <button id="respuesta-no" onclick="moverBoton()">No</button>
 
     </section>
 
-    <section id="aprobacion-casamiento" class="fadeIn aos" data-aos="fade-up">
-        <h2 data-aos="fade-right">Casamiento</h2>
-        
-        <div id="imagen-casamiento" data-aos="fade-up">
-            <img src="osos-casamiento.png" alt="Imagen de Casamiento">
-        </div>
+    <section id="todo" style="display: none;">
+        <header>
+            <h1>¡Feliz Día de San Valentín!</h1>
+        </header>
 
-        <form id="formulario-casamiento" loading="lazy" >
-            <label for="nombre-tu">Tu Nombre:</label>
-            <input type="text" id="nombre-tu" required>
-    
-            <label for="nombre-novia">Nombre de tu Pareja:</label>
-            <input type="text" id="nombre-novia" required>
-    
-            <button type="button" onclick="aprobarCasamiento()">Aprobar Casamiento</button>
-        </form>
-        
-        <div id="mensaje-casamiento" style="display: none;">
+        <section id="contenido" class="fadeIn">
+            <h2>Querida Yasmin</h2>
+            <p>En este Día de San Valentín, quiero expresarte cuánto significas para mí...</p>
             
-        </div>
+            <! Imagen del oso
+            <div  class="oso-corazon-container">
+                <img src="oso.png" alt="Oso abrazando un corazón azul" width="300" id="oso-corazon">
+            </div>
 
-    </section>    
+            <p>Gracias por ser mi compañera, mi amiga y mi amor. Feliz Día de San Valentín, Mi amor. 
+                Te amo más de lo que las palabras pueden decir.</p>
 
-    <section id="contador-aniversario" class="fadeIn aos" data-aos="fade-up">
-        <h2 data-aos="fade-right">Contador para Nuestro Próximo Aniversario</h2>
-        <div id="contador-dias" data-aos="fade-left">
-            <p id="dias-restantes"></p>
-        </div>
-    </section>
-    
-    <footer>
-        <p>© 2024 David</p>
-    </footer>
+            <div id="razones-amor" style="display: none;">
+                <h3>Razones por las que te amo:</h3>
+                <ul>
+                    <li>Eres mi mejor amiga y confidente.</li>
+                    <li>Tu risa ilumina incluso los días más oscuros.</li>
+                    <li>Siempre estás ahí para apoyarme en todo.</li>
+                    <li>Tienes unos ojos hermosos.</li>
+                    <li>La pasión y entusiasmo que pones en las actvidades en pareja.</li>
+                    <li>Tu corazón generoso y disposición a dar sin esperar nada a cambio.</li>
+                    <li>La belleza que va más allá de lo físico, irradiando desde su interior.</li>
+                    <li>Tu apertura a la aventura y disposición a probar cosas nuevas.</li>
+                    <li>El compromiso y esfuerzo que pones en nuestra relación.</li>
+                    <li>Tu honestidad refrescante y la sinceridad con la que comparte sus pensamientos.</li>
+                    <li>Tu gratitud por las pequeñas cosas y capacidad para encontrar alegría en ellas.</li>
+                    <li>La chispa única que compartimos, creando una conexión especial.</li>
+                    <li>Eres preciosa.</li>
+                    <li>Como me haces sentir cuando estamos juntos.</li>
+                </ul>
+            </div>
 
-    <script src="animacion.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
-</body>
-</html>
+            <button id="mostrarRazones" onclick="toggleRazones()">Razones para amarte</button>
+
+        </section>
+
+        <section id="aprobacion-casamiento" class="fadeIn aos" data-aos="fade-up">
+            <h2 data-aos="fade-right" style="text-align: center;">Casamiento</h2>
+            
+            <div id="imagen-casamiento" data-aos="fade-up">
+                <img src="osos-casamiento.png" alt="Imagen de Casamiento">
+            </div>
+
+            <form id="formulario-casamiento" loading="lazy" >
+                <label for="nombre-tu">Tu Nombre:</label>
+                <input type="text" id="nombre-tu" required>
+        
+                <label for="nombre-novia">Nombre de tu Pareja:</label>
+                <input type="text" id="nombre-novia" required>
+        
+                <button type="button" onclick="aprobarCasamiento()">Aprobar Casamiento</button>
+            </form>
+            
+            <div id="mensaje-casamiento" style="display: none;">
+                
+            </div>
+
+        </section>    
+
+        <section id="contador-aniversario" class="fadeIn aos" data-aos="fade-up">
+            <h2 data-aos="fade-right">Contador para Nuestro Próximo Aniversario</h2>
+            <div id="contador-dias" data-aos="fade-left">
+                <p id="dias-restantes"></p>
+            </div>
+        </section>
+        <footer>
+            <p>© 2024 David</p>
+        </footer>
+    </section>  
 
     <script src="animacion.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
