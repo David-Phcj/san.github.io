@@ -17,7 +17,7 @@ function moverBoton() {
         "¡El boton correcto esta justo debajo!",
         "¿Prefieres alargar lo inevitable?",
         "¡Talvez te equivocaste, te doy otra oportunidad!",
-        "¿Porque?",
+        "¿Por que?",
         "¡Estaremos aqui todo el dia!",
         "¿Porque tomas esa decision?",
         "¡Esto es importante elige bien!"]
